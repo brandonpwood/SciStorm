@@ -1,0 +1,22 @@
+{
+  "name": "scistorm",
+  "version": "1.0.0",
+  "description": "REST API server for scistorm",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "scistorm",
+    "REST",
+    "api"
+  ],
+  "author": "Brandon Wood",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "mocha": "^3.2.0",
+    "mongoose": "^4.9.0"
+  }
+}
