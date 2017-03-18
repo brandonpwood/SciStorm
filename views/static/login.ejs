@@ -1,44 +1,48 @@
-<form action="/login" method="post">
-    <div>
-        <label>Username:</label>
-        <input type="text" name="username"/>
-    </div>
-    <div>
-        <label>Password:</label>
-        <input type="password" name="password"/>
-    </div>
-    <div>
-        <input type="submit" value="Log In"/>
-    </div>
-</form>
-<form action="/register" method="post">
-    <div>
-        <label>Username:</label>
-        <input type="text" name="username"/>
-    </div>
-    <div>
-        <label>Name:</label>
-        <input type="text" name="name"/>
-    </div>
-    <div>
-        <label>Email:</label>
-        <input type="text" name="email"/>
-    </div>
-    <div>
-        <label>Password:</label>
-        <input type="password" name="password1"/>
-    </div>
-    <div>
-        <label>Verify Password:</label>
-        <input type="password" name="password2"/>
-    </div>
-    <div>
-        <input type="submit" value="Log In"/>
-    </div>
-</form>
 
-<form action = '/check' method = 'post'>
-  <div type= 'submit' value ='check'>
-    <input type= 'submit' value ='check'/>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+  <link rel="stylesheet" type="text/css" href="css/master.css" />
+  <link rel="stylesheet" type="text/css" href="css/login.css" />
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"/>
+  <title>Log In</title>
+</head>
+
+<body>
+  <div class="content">
+    <div class="text">
+      <h2><b>Sci</b>Storm <i class="fa fa-bolt bolt"></i></h2>
+      <div id="tagline"><h3></h3></div>
+      <a id="loginwithG" class="waves-effect waves-light btn primary white-text">Log In with <i class="fa fa-google" aria-hidden="true"></i></a><br><br>
+      <!-- <a id = "Create Account" class = "waves-effect waves-light btn primary white-text"> Create Account</a><br></br> -->
+      <a id="register" class="waves-effect waves-light btn trimary white-text">Request beta test account</a>
+      <div class ="btns2">
+        <form class = "col s12">
+          <div class="input-field col s12">
+            <input id="name" type="text" class="validate">
+            <label for="name" data-error="wrong" data-success="right">Name</label>
+          </div>
+        </form>
+        <form class = "col s12">
+          <div class="input-field col s12">
+            <input id="email" type="email" class="validate">
+            <label for="email" data-error="wrong" data-success="right">Email</label>
+          </div>
+        </form>
+        <a id = 'send' class = 'waves-effect waves-light btn trimary white-text'>Send</a>
+      </div>
+    </div>
   </div>
-</form>
+  <!-- <script src="https://www.gstatic.com/firebasejs/3.5.0/firebase.js"></script> -->
+  <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/assets/taglines.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+
+</body>
+</html>

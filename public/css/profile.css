@@ -1,0 +1,49 @@
+html,body{
+  height: 100%;
+}
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width:0px;
+    height: 0px;
+}
+#content{
+  height: 100vh;
+  overflow: hidden;
+}
+#profbuilder{
+  height: 100%;
+}
+#sidebar{
+  height: 100%;
+  overflow: scroll;
+}
+#profinfo{
+  height: 100%;
+  overflow: scroll;
+}
+.profpicture{
+  max-width: 100%;
+  max-height: 50%;
+  filter:blur(0px);
+  transition: filter 0.5s ease;
+}
+.profpicture:hover{
+  filter:blur(2px);
+}
+#balences{
+  font-size: 1.3em;
+}
+.fa-check-circle{
+  color: green;
+}
+.fa-times-circle{
+  color: red;
+}
+
+#newpostfabmenu{
+  opacity: .4;
+  transition: opacity 0.4s ease;
+}
+#newpostfabmenu:hover{
+  opacity: 1;
+}

@@ -1,0 +1,12 @@
+/* Communities */
+.card-button {
+  left: 50%;
+  float: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+
+.custom {
+  background-color: #57CC18;
+}

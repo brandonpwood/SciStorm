@@ -98,17 +98,7 @@ app.set('view engine', 'ejs');
 //Fire Controllers
 loginHandler(app);
 indexHandler(app);
-
-// //Cleanup
-// var clean = function sessionCleanup() {
-//     sessionStore.all(function(err, sessions) {
-//         for (var i = 0; i < sessions.length; i++) {
-//             sessionStore.get(sessions[i], function() {} );
-//         }
-//     });
-// }
-// setInterval(clean, timeout);
-
+// loginHandler(app);
 
 //Listener
 app.listen(port, function(){

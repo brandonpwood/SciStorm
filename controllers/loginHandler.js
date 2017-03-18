@@ -19,12 +19,8 @@ module.exports = function(app){
   var User = require('../database/models/user.js');
 
 
-  // Handle index calls
-  index_indicies = ['/', '/index', '/home','/index.html', '/home.html'];
-
-
   //Handles Login calls
-  login_indicies = ['/', '/login', '/home', '/register'];
+  login_indicies = ['/login', '/home', '/register'];
 
   login_indicies.forEach( function (dir) {
     app.get(dir, function (req, res){
@@ -32,16 +28,7 @@ module.exports = function(app){
     })
   });
 
-  //Handle Auth Check
-  app.post('/check', function (req, res){
-    if(req.user){
-      console.log('Success');
-    }else{
-      console.log('failed');
-    }
-    console.log(req.user);
-    res.redirect('/login');
-  });
+
 
 
 

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+    <link rel="stylesheet" type="text/css" href="css/master.css" />
+    <link rel="stylesheet" type="text/css" href="css/profile.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"/>
+    <title>Profile</title>
+</head>
+
+<body>
+  <!-- Mobile Warning -->
+   <div class="fullscreen hide-on-med-and-up center-align">
+     <div class="row">
+        <div class="col s12">
+          <div class="card-panel red">
+            <h4>Sci<span class="thin">Storm</span><i class="fa fa-bolt secondary-text"></i> was designed for desktop (and tablet). We suggest that you join us on those platforms.</h4><br><h6><a class="white-text" href="indexmobile.html">Continue anyway</a></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Mobile Warning -->
+    <div class="hide-on-small-only" id="content"><div id="fadefromwhite"></div>
+      <!-- Navbar -->
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper primary">
+            <a href="index.html" class="brand-logo"><i class="fa fa-bolt bolt title-bolt" style="margin-left: 5px;"></i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="storms.html">Storms</a></li>
+              <li><a href="communities.html">Communites</a></li>
+              <li><a href="#">Profile</a></li>
+              <li class="trimary" id="info"><a class="dropdown-button" href='#' data-activates='infodrop'><i class="fa fa-cog white-text"></i></a></li>
+              <li class="secondary" id="signout"><a class='black-text'>Sign Out</a></li>
+            </ul>
+            <ul id='infodrop' class='dropdown-content primary-text trimary'><center>
+              <li><a href="#!" style= 'color:white;'>TOS</a></li>
+              <li class="divider"></li>
+              <li><a href="#!" style= 'color:white;'>FAQ</a></li>
+              <li class="divider"></li>
+              <li><a href="#!" style= 'color:white;'>Contact</a></li>
+            </center></ul>
+          </div>
+        </nav>
+      </div>
+      <!-- End Navbar -->
+      <!-- Profile Builder -->
+      <div class="row" id="profbuilder">
+        <!-- Profile Sidebar -->
+        <div class="col s4 trimary" id="sidebar">
+            <center><img class="profpicture center-align tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to change profile picture" src="http://placehold.it/500x500"></center>
+            <hr>
+            <div id="balences">
+              <span class="white-text"><i class="fa fa-mouse-pointer" aria-hidden="true"></i> Fake internet points: <span id="FIPamount">80</span></span><br>
+              <!-- <span class="white-text"><i class="fa fa-credit-card" aria-hidden="true"></i> Storm bank: $<span id="FIPamount">80</span></span> -->
+            </div>
+        </div>
+        <div class="col s8 quadmary" id="profinfo">
+          <div class="card-panel white" style="padding:0;">
+            <div id="profform" class="row">
+              <span class="black-text"><h3 class='thin'>Basic Info:</h3>
+                <div class="input-field col s6">
+                  <input id="first_name" type="text" class="validate">
+                  <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name">Last Name</label>
+                </div>
+                <div class="input-field col s12">
+                  <input id="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                </div>
+                  <center><input type="checkbox" id="emailpublic" />
+                  <label for="emailpublic">Publicly display email?</label></center><br>
+                <div class="input-field col s6">
+                  <input id="username" type="text" class="validate">
+                  <label for="username">Username</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="password" value="password" disabled type="password">
+                  <label for="username">Password (Login with Google)</label>
+                </div>
+              </span>
+            </div>
+        </div>
+        <a class="waves-effect secondary black-text btn" id="saveData">Save Data</a>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/3.5.0/firebase.js"></script>
+     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/profile.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+</html>

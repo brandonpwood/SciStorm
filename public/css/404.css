@@ -1,0 +1,58 @@
+/*
+ 404 Page
+ Dan Shafman
+ 2.19.17
+*/
+
+body{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h2 {
+  font-weight: 400;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  padding-top: 153px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 150;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  height: 150px;
+  padding-top: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+h4 {
+  font-weight: 200;
+  font-size: 40;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  height: 70px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.bolt {
+  color: #e0ed6f !important;
+  padding-left: 12px !important;
+}

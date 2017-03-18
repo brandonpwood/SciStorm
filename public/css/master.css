@@ -1,0 +1,46 @@
+/*Master*/
+@import url('https://fonts.googleapis.com/css?family=Coda');
+.primary{
+    background-color: #35637F  !important;
+}
+.primary-text{
+    color: #76323F !important;
+}
+.secondary{
+    background-color: #FFFFFF !important;
+}
+.secondary-text{
+    color:#FFFFFF !important;
+}
+.trimary{
+	background-color: #204D6A !important;
+}
+.trimary-text{
+	color: #98505e !important;
+}
+.quadmary{
+	background-color: #DEE5E5 !important;
+}
+.quadmary-text{
+	color: #DEE5E5 !important;
+}
+.bolt {
+  color: #e0ed6f !important;
+}
+.title-bolt {
+  padding-left: 12px !important;
+}
+
+#fadefromwhite{
+	position: absolute;
+	background-color: white;
+	height: 100%;
+	width: 100%;
+	z-index: 5;
+}
+.navbar-fixed{
+	opacity: 0;
+}
+.scroll{
+  overflow:auto;
+}
