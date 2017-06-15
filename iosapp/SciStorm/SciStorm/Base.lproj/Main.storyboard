@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SciStorm" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFd-kc-44S">
+                                <rect key="frame" x="62" y="382" width="250" height="50"/>
+                                <color key="backgroundColor" red="0.10588235294117647" green="0.60392156862745094" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="242" id="Sbd-fb-Nvf"/>
+                                    <constraint firstAttribute="height" constant="42" id="eyG-1G-rDs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="20"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iaT-0v-3AD">
+                                <rect key="frame" x="51" y="84" width="272" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="272" id="BX7-ib-QaJ"/>
+                                    <constraint firstAttribute="height" constant="85" id="Kba-NC-xmK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="64"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Egi-Br-i7g">
+                                <rect key="frame" x="136" y="177" width="103" height="156"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Egi-Br-i7g" secondAttribute="height" multiplier="103:110" id="gQu-aI-w6Q"/>
+                                    <constraint firstAttribute="height" constant="130" id="tgs-rU-2Wp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="New to SciStorm? FAQ Here!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixD-li-Rw2">
+                                <rect key="frame" x="51" y="626" width="272" height="21"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerXWithinMargins" secondItem="ixD-li-Rw2" secondAttribute="centerX" id="KiG-Ph-5zV"/>
+                            <constraint firstItem="cFd-kc-44S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerXWithinMargins" id="LEe-hV-Ntk"/>
+                            <constraint firstItem="iaT-0v-3AD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="64" id="LUg-IU-XYX"/>
+                            <constraint firstAttribute="centerXWithinMargins" secondItem="Egi-Br-i7g" secondAttribute="centerX" id="NAS-eL-DWC"/>
+                            <constraint firstItem="Egi-Br-i7g" firstAttribute="top" secondItem="iaT-0v-3AD" secondAttribute="bottom" id="Tan-Z1-nIt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ixD-li-Rw2" secondAttribute="bottom" constant="20" id="fXi-00-EkM"/>
+                            <constraint firstItem="cFd-kc-44S" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="400" id="iMX-1q-TdO"/>
+                            <constraint firstAttribute="centerXWithinMargins" secondItem="iaT-0v-3AD" secondAttribute="centerX" id="ycy-vV-mxe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="requestBetaButton" destination="cFd-kc-44S" id="TcU-zF-aG0"/>
+                        <outlet property="titleLabel" destination="iaT-0v-3AD" id="1BJ-la-jwE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="100.29985007496252"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="0vl-lz-1FW">
+            <objects>
+                <viewController storyboardIdentifier="RequestBetaController" id="f2D-sL-CXl" customClass="RequestBetaViewController" customModule="SciStorm" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kLt-dQ-c2t"/>
+                        <viewControllerLayoutGuide type="bottom" id="5sY-Ft-yDw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3o5-xS-GW1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hz0-yi-g3o">
+                                <rect key="frame" x="16" y="20" width="39" height="32"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="17"/>
+                                <state key="normal" title="Back"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Request an account with Gmail!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zIm-36-pP8">
+                                <rect key="frame" x="28" y="137" width="319" height="46"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dPL-fC-ejt">
+                                <rect key="frame" x="62" y="191" width="251" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="qWQ-dQ-AtU"/>
+                                </constraints>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dPL-fC-ejt" firstAttribute="centerX" secondItem="3o5-xS-GW1" secondAttribute="centerXWithinMargins" id="2sf-II-JwU"/>
+                            <constraint firstItem="dPL-fC-ejt" firstAttribute="leading" secondItem="3o5-xS-GW1" secondAttribute="leadingMargin" constant="46" id="6PM-U4-z22"/>
+                            <constraint firstItem="dPL-fC-ejt" firstAttribute="top" secondItem="zIm-36-pP8" secondAttribute="bottom" constant="15" id="PQK-5l-fuh"/>
+                            <constraint firstItem="zIm-36-pP8" firstAttribute="top" secondItem="Hz0-yi-g3o" secondAttribute="bottom" constant="85" id="bhw-cM-3h8"/>
+                            <constraint firstItem="Hz0-yi-g3o" firstAttribute="leading" secondItem="3o5-xS-GW1" secondAttribute="leadingMargin" id="iIG-Hg-iFi"/>
+                            <constraint firstItem="Hz0-yi-g3o" firstAttribute="top" secondItem="kLt-dQ-c2t" secondAttribute="bottom" id="lD4-fv-4xa"/>
+                            <constraint firstItem="zIm-36-pP8" firstAttribute="centerX" secondItem="3o5-xS-GW1" secondAttribute="centerXWithinMargins" id="ouM-qs-Cyt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="0ph-CT-GkY"/>
+                    <connections>
+                        <outlet property="backButton" destination="Hz0-yi-g3o" id="Tah-T2-h4I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="La0-gE-OWB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="143.19999999999999" y="884.70764617691157"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="320" height="320"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_SciStorm {
+  umbrella header "Pods-SciStorm-umbrella.h"
+
+  export *
+  module * { export * }
+}

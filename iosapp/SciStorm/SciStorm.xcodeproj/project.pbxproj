@@ -1,0 +1,749 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3759FC811EF0E9B3005646B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3759FC801EF0E9B3005646B8 /* GoogleService-Info.plist */; };
+		37E1A9D31EF1B3EE00ECFD07 /* RequestBetaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1A9D21EF1B3EE00ECFD07 /* RequestBetaViewController.swift */; };
+		37E7E4081EF0E85B00E5820B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E4071EF0E85B00E5820B /* AppDelegate.swift */; };
+		37E7E40A1EF0E85B00E5820B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E4091EF0E85B00E5820B /* ViewController.swift */; };
+		37E7E40D1EF0E85B00E5820B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37E7E40B1EF0E85B00E5820B /* Main.storyboard */; };
+		37E7E40F1EF0E85B00E5820B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E7E40E1EF0E85B00E5820B /* Assets.xcassets */; };
+		37E7E4121EF0E85B00E5820B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37E7E4101EF0E85B00E5820B /* LaunchScreen.storyboard */; };
+		37E7E41D1EF0E85B00E5820B /* SciStormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E41C1EF0E85B00E5820B /* SciStormTests.swift */; };
+		37E7E4281EF0E85B00E5820B /* SciStormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E4271EF0E85B00E5820B /* SciStormUITests.swift */; };
+		AF1905F4898A227C33B1E0E0 /* Pods_SciStormUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FE2C84961A46B1D8523829 /* Pods_SciStormUITests.framework */; };
+		FDADF2FBE3415CB2BFCCE632 /* Pods_SciStormTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BB095256E65E3F4C7DD31B /* Pods_SciStormTests.framework */; };
+		FFF3416E15A44472CBAA13F2 /* Pods_SciStorm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141C1B9BB20C25882E7D2ED1 /* Pods_SciStorm.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		37E7E4191EF0E85B00E5820B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37E7E3FC1EF0E85B00E5820B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37E7E4031EF0E85B00E5820B;
+			remoteInfo = SciStorm;
+		};
+		37E7E4241EF0E85B00E5820B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37E7E3FC1EF0E85B00E5820B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37E7E4031EF0E85B00E5820B;
+			remoteInfo = SciStorm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		141C1B9BB20C25882E7D2ED1 /* Pods_SciStorm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SciStorm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18BB095256E65E3F4C7DD31B /* Pods_SciStormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SciStormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31FE2C84961A46B1D8523829 /* Pods_SciStormUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SciStormUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3759FC801EF0E9B3005646B8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3759FC821EF0ECD8005646B8 /* SciStorm-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SciStorm-Bridging-Header.h"; sourceTree = "<group>"; };
+		37E1A9D21EF1B3EE00ECFD07 /* RequestBetaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBetaViewController.swift; sourceTree = "<group>"; };
+		37E7E4041EF0E85B00E5820B /* SciStorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SciStorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37E7E4071EF0E85B00E5820B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		37E7E4091EF0E85B00E5820B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		37E7E40C1EF0E85B00E5820B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		37E7E40E1EF0E85B00E5820B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		37E7E4111EF0E85B00E5820B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		37E7E4131EF0E85B00E5820B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37E7E4181EF0E85B00E5820B /* SciStormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SciStormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		37E7E41C1EF0E85B00E5820B /* SciStormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SciStormTests.swift; sourceTree = "<group>"; };
+		37E7E41E1EF0E85B00E5820B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37E7E4231EF0E85B00E5820B /* SciStormUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SciStormUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		37E7E4271EF0E85B00E5820B /* SciStormUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SciStormUITests.swift; sourceTree = "<group>"; };
+		37E7E4291EF0E85B00E5820B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		743BCCA1B469A9821C5E88C3 /* Pods-SciStorm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SciStorm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SciStorm/Pods-SciStorm.debug.xcconfig"; sourceTree = "<group>"; };
+		7EF4314E50B0F177D59F77BB /* Pods-SciStormTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SciStormTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SciStormTests/Pods-SciStormTests.release.xcconfig"; sourceTree = "<group>"; };
+		9DC7F197A96F420AF4E7159D /* Pods-SciStormTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SciStormTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SciStormTests/Pods-SciStormTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B65B0963872B98E8369757B2 /* Pods-SciStormUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SciStormUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SciStormUITests/Pods-SciStormUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D9055290D27D6421927A660B /* Pods-SciStorm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SciStorm.release.xcconfig"; path = "Pods/Target Support Files/Pods-SciStorm/Pods-SciStorm.release.xcconfig"; sourceTree = "<group>"; };
+		FB31A875BD704F4C26EFD199 /* Pods-SciStormUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SciStormUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SciStormUITests/Pods-SciStormUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37E7E4011EF0E85B00E5820B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFF3416E15A44472CBAA13F2 /* Pods_SciStorm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37E7E4151EF0E85B00E5820B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDADF2FBE3415CB2BFCCE632 /* Pods_SciStormTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37E7E4201EF0E85B00E5820B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF1905F4898A227C33B1E0E0 /* Pods_SciStormUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A52722B874BBDE01084C16F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				141C1B9BB20C25882E7D2ED1 /* Pods_SciStorm.framework */,
+				18BB095256E65E3F4C7DD31B /* Pods_SciStormTests.framework */,
+				31FE2C84961A46B1D8523829 /* Pods_SciStormUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37E7E3FB1EF0E85B00E5820B = {
+			isa = PBXGroup;
+			children = (
+				3759FC801EF0E9B3005646B8 /* GoogleService-Info.plist */,
+				37E7E4061EF0E85B00E5820B /* SciStorm */,
+				37E7E41B1EF0E85B00E5820B /* SciStormTests */,
+				37E7E4261EF0E85B00E5820B /* SciStormUITests */,
+				37E7E4051EF0E85B00E5820B /* Products */,
+				4C246577825D4E0E6D797444 /* Pods */,
+				2A52722B874BBDE01084C16F /* Frameworks */,
+				3759FC821EF0ECD8005646B8 /* SciStorm-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		37E7E4051EF0E85B00E5820B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37E7E4041EF0E85B00E5820B /* SciStorm.app */,
+				37E7E4181EF0E85B00E5820B /* SciStormTests.xctest */,
+				37E7E4231EF0E85B00E5820B /* SciStormUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37E7E4061EF0E85B00E5820B /* SciStorm */ = {
+			isa = PBXGroup;
+			children = (
+				37E7E4071EF0E85B00E5820B /* AppDelegate.swift */,
+				37E7E4091EF0E85B00E5820B /* ViewController.swift */,
+				37E7E40B1EF0E85B00E5820B /* Main.storyboard */,
+				37E7E40E1EF0E85B00E5820B /* Assets.xcassets */,
+				37E7E4101EF0E85B00E5820B /* LaunchScreen.storyboard */,
+				37E7E4131EF0E85B00E5820B /* Info.plist */,
+				37E1A9D21EF1B3EE00ECFD07 /* RequestBetaViewController.swift */,
+			);
+			path = SciStorm;
+			sourceTree = "<group>";
+		};
+		37E7E41B1EF0E85B00E5820B /* SciStormTests */ = {
+			isa = PBXGroup;
+			children = (
+				37E7E41C1EF0E85B00E5820B /* SciStormTests.swift */,
+				37E7E41E1EF0E85B00E5820B /* Info.plist */,
+			);
+			path = SciStormTests;
+			sourceTree = "<group>";
+		};
+		37E7E4261EF0E85B00E5820B /* SciStormUITests */ = {
+			isa = PBXGroup;
+			children = (
+				37E7E4271EF0E85B00E5820B /* SciStormUITests.swift */,
+				37E7E4291EF0E85B00E5820B /* Info.plist */,
+			);
+			path = SciStormUITests;
+			sourceTree = "<group>";
+		};
+		4C246577825D4E0E6D797444 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				743BCCA1B469A9821C5E88C3 /* Pods-SciStorm.debug.xcconfig */,
+				D9055290D27D6421927A660B /* Pods-SciStorm.release.xcconfig */,
+				9DC7F197A96F420AF4E7159D /* Pods-SciStormTests.debug.xcconfig */,
+				7EF4314E50B0F177D59F77BB /* Pods-SciStormTests.release.xcconfig */,
+				B65B0963872B98E8369757B2 /* Pods-SciStormUITests.debug.xcconfig */,
+				FB31A875BD704F4C26EFD199 /* Pods-SciStormUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		37E7E4031EF0E85B00E5820B /* SciStorm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37E7E42C1EF0E85B00E5820B /* Build configuration list for PBXNativeTarget "SciStorm" */;
+			buildPhases = (
+				8F85C227940D65B089ADB6F6 /* [CP] Check Pods Manifest.lock */,
+				37E7E4001EF0E85B00E5820B /* Sources */,
+				37E7E4011EF0E85B00E5820B /* Frameworks */,
+				37E7E4021EF0E85B00E5820B /* Resources */,
+				123608ADEF2469991927A4FD /* [CP] Embed Pods Frameworks */,
+				F29FF4BCAA5FB35F09C07AAA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SciStorm;
+			productName = SciStorm;
+			productReference = 37E7E4041EF0E85B00E5820B /* SciStorm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		37E7E4171EF0E85B00E5820B /* SciStormTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37E7E42F1EF0E85B00E5820B /* Build configuration list for PBXNativeTarget "SciStormTests" */;
+			buildPhases = (
+				50E3623DA4FC44A69C93F448 /* [CP] Check Pods Manifest.lock */,
+				37E7E4141EF0E85B00E5820B /* Sources */,
+				37E7E4151EF0E85B00E5820B /* Frameworks */,
+				37E7E4161EF0E85B00E5820B /* Resources */,
+				2EA6F47A33A334F1150038C0 /* [CP] Embed Pods Frameworks */,
+				573ED90083D977BADE497003 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37E7E41A1EF0E85B00E5820B /* PBXTargetDependency */,
+			);
+			name = SciStormTests;
+			productName = SciStormTests;
+			productReference = 37E7E4181EF0E85B00E5820B /* SciStormTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		37E7E4221EF0E85B00E5820B /* SciStormUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37E7E4321EF0E85B00E5820B /* Build configuration list for PBXNativeTarget "SciStormUITests" */;
+			buildPhases = (
+				67F1CB550953CC316B2853C6 /* [CP] Check Pods Manifest.lock */,
+				37E7E41F1EF0E85B00E5820B /* Sources */,
+				37E7E4201EF0E85B00E5820B /* Frameworks */,
+				37E7E4211EF0E85B00E5820B /* Resources */,
+				04A682BEF839E3DF1E0EFA60 /* [CP] Embed Pods Frameworks */,
+				152D5B163DCA45FB3D8941E8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37E7E4251EF0E85B00E5820B /* PBXTargetDependency */,
+			);
+			name = SciStormUITests;
+			productName = SciStormUITests;
+			productReference = 37E7E4231EF0E85B00E5820B /* SciStormUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		37E7E3FC1EF0E85B00E5820B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Dan Shafman";
+				TargetAttributes = {
+					37E7E4031EF0E85B00E5820B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = RF879MPE57;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					37E7E4171EF0E85B00E5820B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = RF879MPE57;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 37E7E4031EF0E85B00E5820B;
+					};
+					37E7E4221EF0E85B00E5820B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = RF879MPE57;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 37E7E4031EF0E85B00E5820B;
+					};
+				};
+			};
+			buildConfigurationList = 37E7E3FF1EF0E85B00E5820B /* Build configuration list for PBXProject "SciStorm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 37E7E3FB1EF0E85B00E5820B;
+			productRefGroup = 37E7E4051EF0E85B00E5820B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				37E7E4031EF0E85B00E5820B /* SciStorm */,
+				37E7E4171EF0E85B00E5820B /* SciStormTests */,
+				37E7E4221EF0E85B00E5820B /* SciStormUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37E7E4021EF0E85B00E5820B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37E7E4121EF0E85B00E5820B /* LaunchScreen.storyboard in Resources */,
+				3759FC811EF0E9B3005646B8 /* GoogleService-Info.plist in Resources */,
+				37E7E40F1EF0E85B00E5820B /* Assets.xcassets in Resources */,
+				37E7E40D1EF0E85B00E5820B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37E7E4161EF0E85B00E5820B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37E7E4211EF0E85B00E5820B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04A682BEF839E3DF1E0EFA60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SciStormUITests/Pods-SciStormUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		123608ADEF2469991927A4FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SciStorm/Pods-SciStorm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		152D5B163DCA45FB3D8941E8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SciStormUITests/Pods-SciStormUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2EA6F47A33A334F1150038C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SciStormTests/Pods-SciStormTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50E3623DA4FC44A69C93F448 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		573ED90083D977BADE497003 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SciStormTests/Pods-SciStormTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67F1CB550953CC316B2853C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8F85C227940D65B089ADB6F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F29FF4BCAA5FB35F09C07AAA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SciStorm/Pods-SciStorm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37E7E4001EF0E85B00E5820B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37E7E40A1EF0E85B00E5820B /* ViewController.swift in Sources */,
+				37E7E4081EF0E85B00E5820B /* AppDelegate.swift in Sources */,
+				37E1A9D31EF1B3EE00ECFD07 /* RequestBetaViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37E7E4141EF0E85B00E5820B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37E7E41D1EF0E85B00E5820B /* SciStormTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37E7E41F1EF0E85B00E5820B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37E7E4281EF0E85B00E5820B /* SciStormUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37E7E41A1EF0E85B00E5820B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37E7E4031EF0E85B00E5820B /* SciStorm */;
+			targetProxy = 37E7E4191EF0E85B00E5820B /* PBXContainerItemProxy */;
+		};
+		37E7E4251EF0E85B00E5820B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37E7E4031EF0E85B00E5820B /* SciStorm */;
+			targetProxy = 37E7E4241EF0E85B00E5820B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		37E7E40B1EF0E85B00E5820B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37E7E40C1EF0E85B00E5820B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		37E7E4101EF0E85B00E5820B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37E7E4111EF0E85B00E5820B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		37E7E42A1EF0E85B00E5820B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		37E7E42B1EF0E85B00E5820B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		37E7E42D1EF0E85B00E5820B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 743BCCA1B469A9821C5E88C3 /* Pods-SciStorm.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = RF879MPE57;
+				INFOPLIST_FILE = SciStorm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.SciStorm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SciStorm-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		37E7E42E1EF0E85B00E5820B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9055290D27D6421927A660B /* Pods-SciStorm.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = RF879MPE57;
+				INFOPLIST_FILE = SciStorm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.SciStorm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SciStorm-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		37E7E4301EF0E85B00E5820B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DC7F197A96F420AF4E7159D /* Pods-SciStormTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = RF879MPE57;
+				INFOPLIST_FILE = SciStormTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.SciStormTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SciStorm.app/SciStorm";
+			};
+			name = Debug;
+		};
+		37E7E4311EF0E85B00E5820B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EF4314E50B0F177D59F77BB /* Pods-SciStormTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = RF879MPE57;
+				INFOPLIST_FILE = SciStormTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.SciStormTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SciStorm.app/SciStorm";
+			};
+			name = Release;
+		};
+		37E7E4331EF0E85B00E5820B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B65B0963872B98E8369757B2 /* Pods-SciStormUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = RF879MPE57;
+				INFOPLIST_FILE = SciStormUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.SciStormUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SciStorm;
+			};
+			name = Debug;
+		};
+		37E7E4341EF0E85B00E5820B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB31A875BD704F4C26EFD199 /* Pods-SciStormUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = RF879MPE57;
+				INFOPLIST_FILE = SciStormUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.SciStormUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SciStorm;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37E7E3FF1EF0E85B00E5820B /* Build configuration list for PBXProject "SciStorm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37E7E42A1EF0E85B00E5820B /* Debug */,
+				37E7E42B1EF0E85B00E5820B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37E7E42C1EF0E85B00E5820B /* Build configuration list for PBXNativeTarget "SciStorm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37E7E42D1EF0E85B00E5820B /* Debug */,
+				37E7E42E1EF0E85B00E5820B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37E7E42F1EF0E85B00E5820B /* Build configuration list for PBXNativeTarget "SciStormTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37E7E4301EF0E85B00E5820B /* Debug */,
+				37E7E4311EF0E85B00E5820B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37E7E4321EF0E85B00E5820B /* Build configuration list for PBXNativeTarget "SciStormUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37E7E4331EF0E85B00E5820B /* Debug */,
+				37E7E4341EF0E85B00E5820B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 37E7E3FC1EF0E85B00E5820B /* Project object */;
+}
