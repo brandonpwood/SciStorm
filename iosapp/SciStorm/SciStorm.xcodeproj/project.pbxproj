@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3759FC811EF0E9B3005646B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3759FC801EF0E9B3005646B8 /* GoogleService-Info.plist */; };
+		374236FD1EF619D700EE3977 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374236FC1EF619D700EE3977 /* FeedViewController.swift */; };
+		37C1A93B1EF37E1800978842 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37C1A93A1EF37E1800978842 /* GoogleService-Info.plist */; };
+		37C9AFD81EF22693002621EE /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C9AFD71EF22693002621EE /* TermsViewController.swift */; };
 		37E1A9D31EF1B3EE00ECFD07 /* RequestBetaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1A9D21EF1B3EE00ECFD07 /* RequestBetaViewController.swift */; };
 		37E7E4081EF0E85B00E5820B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E4071EF0E85B00E5820B /* AppDelegate.swift */; };
 		37E7E40A1EF0E85B00E5820B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E4091EF0E85B00E5820B /* ViewController.swift */; };
@@ -42,8 +44,10 @@
 		141C1B9BB20C25882E7D2ED1 /* Pods_SciStorm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SciStorm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BB095256E65E3F4C7DD31B /* Pods_SciStormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SciStormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31FE2C84961A46B1D8523829 /* Pods_SciStormUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SciStormUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3759FC801EF0E9B3005646B8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		374236FC1EF619D700EE3977 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		3759FC821EF0ECD8005646B8 /* SciStorm-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SciStorm-Bridging-Header.h"; sourceTree = "<group>"; };
+		37C1A93A1EF37E1800978842 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		37C9AFD71EF22693002621EE /* TermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 		37E1A9D21EF1B3EE00ECFD07 /* RequestBetaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBetaViewController.swift; sourceTree = "<group>"; };
 		37E7E4041EF0E85B00E5820B /* SciStorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SciStorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37E7E4071EF0E85B00E5820B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,7 +111,7 @@
 		37E7E3FB1EF0E85B00E5820B = {
 			isa = PBXGroup;
 			children = (
-				3759FC801EF0E9B3005646B8 /* GoogleService-Info.plist */,
+				37C1A93A1EF37E1800978842 /* GoogleService-Info.plist */,
 				37E7E4061EF0E85B00E5820B /* SciStorm */,
 				37E7E41B1EF0E85B00E5820B /* SciStormTests */,
 				37E7E4261EF0E85B00E5820B /* SciStormUITests */,
@@ -138,6 +142,8 @@
 				37E7E4101EF0E85B00E5820B /* LaunchScreen.storyboard */,
 				37E7E4131EF0E85B00E5820B /* Info.plist */,
 				37E1A9D21EF1B3EE00ECFD07 /* RequestBetaViewController.swift */,
+				37C9AFD71EF22693002621EE /* TermsViewController.swift */,
+				374236FC1EF619D700EE3977 /* FeedViewController.swift */,
 			);
 			path = SciStorm;
 			sourceTree = "<group>";
@@ -294,7 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37E7E4121EF0E85B00E5820B /* LaunchScreen.storyboard in Resources */,
-				3759FC811EF0E9B3005646B8 /* GoogleService-Info.plist in Resources */,
+				37C1A93B1EF37E1800978842 /* GoogleService-Info.plist in Resources */,
 				37E7E40F1EF0E85B00E5820B /* Assets.xcassets in Resources */,
 				37E7E40D1EF0E85B00E5820B /* Main.storyboard in Resources */,
 			);
@@ -461,6 +467,8 @@
 			files = (
 				37E7E40A1EF0E85B00E5820B /* ViewController.swift in Sources */,
 				37E7E4081EF0E85B00E5820B /* AppDelegate.swift in Sources */,
+				374236FD1EF619D700EE3977 /* FeedViewController.swift in Sources */,
+				37C9AFD81EF22693002621EE /* TermsViewController.swift in Sources */,
 				37E1A9D31EF1B3EE00ECFD07 /* RequestBetaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>TRACKING_ID</key>
-	<string>UA-101000227-1</string>
+	<string>UA-101143461-1</string>
 	<key>CLIENT_ID</key>
-	<string>283552807672-p98ce1ur7c3mp80djq47j270hvs1q98q.apps.googleusercontent.com</string>
+	<string>241188381664-vsppmer9ods1eukg7nkttqst2uv2homu.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.283552807672-p98ce1ur7c3mp80djq47j270hvs1q98q</string>
+	<string>com.googleusercontent.apps.241188381664-vsppmer9ods1eukg7nkttqst2uv2homu</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.mycompany.SciStorm</string>
 	<key>PROJECT_ID</key>
-	<string>firebase-scistorm</string>
+	<string>scistorm-ac400</string>
 	<key>IS_ADS_ENABLED</key>
 	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:283552807672:ios:8753462e1a86b738</string>
+	<string>1:241188381664:ios:8753462e1a86b738</string>
 </dict>
 </plist>

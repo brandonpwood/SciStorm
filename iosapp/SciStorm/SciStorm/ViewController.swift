@@ -43,7 +43,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
         let attrTitle = createBoldRangeString(text: "SciStorm", size: 64, start: 0, len: 3, color: UIColor.white)
         titleLabel.attributedText = attrTitle
         
-        print("\nSigned in as \(defaults.string(forKey: "fullName")!)\n")
+//        print("\nSigned in as \(defaults.string(forKey: "fullName"))\n")
         //GIDSignIn.sharedInstance().signInSilently()
     }
 

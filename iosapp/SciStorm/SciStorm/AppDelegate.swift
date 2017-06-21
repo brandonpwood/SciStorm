@@ -11,11 +11,13 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     
+//     User defaults
+    let defaults: UserDefaults = UserDefaults.standard
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    var window: UIWindow?
+    
 //    Method to handle sign-in from Google
     public func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        print("Logged in through Google")
-        
-        let defaults: UserDefaults = UserDefaults.standard
         
         if (error == nil) {
             let userId = user.userID
@@ -25,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             let familyName = user.profile.familyName
             let email = user.profile.email
             
-//            Sets the app defaults for the next time it is started
+            // Sets the app defaults for the next time it is started
             defaults.set(userId, forKey: "userId")
             defaults.set(idToken, forKey: "idToken")
             defaults.set(fullName, forKey: "fullName")
@@ -33,6 +35,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             defaults.set(familyName, forKey: "familyName")
             defaults.set(email, forKey: "email")
             
+            print("\n\nSigned in as \(defaults.string(forKey: "fullName"))")
+
+            // Transitions to feed when signed in
+            let initialViewController = storyboard.instantiateViewController(withIdentifier: "TabController")
+            
+            self.window?.rootViewController = initialViewController
+            self.window?.makeKeyAndVisible()
         } else {
             print("\(error.localizedDescription)")
         }
@@ -45,6 +54,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        // Skips login page if already signed in
+        if defaults.string(forKey: "fullName") != nil {
+            print("\n\nInitial sign in as \(defaults.string(forKey: "fullName"))")
+//            self.window?.rootViewController!.performSegue(withIdentifier: "signed_in", sender: nil)
+            let initialViewController = storyboard.instantiateViewController(withIdentifier: "TabController")
+            
+            self.window?.rootViewController = initialViewController
+            self.window?.makeKeyAndVisible()
+        }
+        
         var configureError: NSError?
         GGLContext.sharedInstance().configureWithError(&configureError)
         assert(configureError == nil, "Error configuring Google services: \(configureError)")
@@ -55,18 +74,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        print("kek")
         return GIDSignIn.sharedInstance().handle(url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
     }
     
     func application(_ app: UIApplication, open url: URL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
+        print("lel")
         var options: [String: AnyObject] = [UIApplicationOpenURLOptionsKey.sourceApplication.rawValue: sourceApplication as AnyObject,
                                             UIApplicationOpenURLOptionsKey.annotation.rawValue: annotation!]
         return GIDSignIn.sharedInstance().handle(url,
                                                     sourceApplication: sourceApplication,
                                                     annotation: annotation)
     }
-    
-    var window: UIWindow?
     
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
