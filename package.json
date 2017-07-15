@@ -1,0 +1,28 @@
+{
+  "name": "scistorm",
+  "version": "0.0.1",
+  "description": "A social media web app for creating ideas and sharing an interest in STEM.",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandonpwood/SciStorm.git"
+  },
+  "keywords": [
+    "SciStorm"
+  ],
+  "author": "Brandon Wood",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brandonpwood/SciStorm/issues"
+  },
+  "homepage": "https://github.com/brandonpwood/SciStorm#readme",
+  "dependencies": {
+    "client-sessions": "^0.8.0",
+    "express": "^4.15.3",
+    "helmet": "^3.6.1",
+    "mongoose": "^4.11.3"
+  }
+}
